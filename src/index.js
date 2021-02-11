@@ -9,6 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// console.log(process.env);
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
