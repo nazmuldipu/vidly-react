@@ -16,6 +16,8 @@ import NotFound from './components/notFound';
 import RegisterForm from './components/registerForm';
 import Rentals from './components/rentals';
 import auth from './services/authService';
+import Counter from './hooks/counter';
+import BookPage from './contex/BookPage';
 
 class App extends Component {
   state = {}
@@ -31,6 +33,8 @@ class App extends Component {
         <NavBar user={user} />
         <main className="container">
           <Switch>
+            <Route path="/books" component={BookPage} />
+            <Route path="/counter" component={Counter} />
             <Route path="/register" component={RegisterForm} />
             <Route path="/login" component={LoginForm} />
             <Route path="/logout" component={Logout} />

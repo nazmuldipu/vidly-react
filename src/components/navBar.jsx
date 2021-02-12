@@ -54,6 +54,9 @@ const NavBar = ({ user }) => {
               </NavLink>
             </React.Fragment>
           )}
+          <NavLink className="nav-item nav-link" to="/counter">
+            Counter
+          </NavLink>
         </ul>
       </div>
     </nav>
